@@ -12,9 +12,9 @@ class SignInActivity : BaseActivity(){
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_sign_in)
-        fab = findViewById(R.id.fab_next_step)
-        fab?.setOnClickListener {
-            goToActivity(MainActivity::class.java)
-        }
+//        fab = findViewById(R.id.fab_next_step)
+//        fab?.setOnClickListener {
+//            goToActivity(MainActivity::class.java)
+//        }
     }
 }
