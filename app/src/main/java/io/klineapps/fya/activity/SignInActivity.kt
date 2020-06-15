@@ -1,17 +1,14 @@
 package io.klineapps.fya.activity
 
 import android.os.Bundle
-import android.os.PatternMatcher
 import android.text.TextUtils
 import android.util.Patterns
 import android.widget.Button
 import android.widget.EditText
+import android.widget.TextView
 import android.widget.Toast
-import com.google.android.material.floatingactionbutton.FloatingActionButton
 import io.klineapps.fya.R
 import io.klineapps.fya.activity.base.BaseActivity
-import kotlinx.android.synthetic.main.activity_sign_in.*
-import java.util.regex.Pattern
 
 class SignInActivity : BaseActivity(){
 
@@ -19,15 +16,23 @@ class SignInActivity : BaseActivity(){
     private var usernameInput: EditText? = null
     private var passwordInput: EditText? = null
 
+    private var newAccountLink: TextView? = null
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_sign_in)
 
-        signInButton = findViewById(R.id.loginButton)
+        signInButton = findViewById(R.id.button_login)
 
         usernameInput = findViewById(R.id.username)
         passwordInput = findViewById(R.id.password)
+        newAccountLink = findViewById(R.id.new_account_link)
 
+        listenerSignInButton()
+        listenerSignUpButton()
+    }
+
+    private fun listenerSignInButton() {
         var textUsername = usernameInput?.getText()
         var textPassword = passwordInput?.getText()
 
@@ -47,6 +52,11 @@ class SignInActivity : BaseActivity(){
                 return@setOnClickListener
             }
         }
+    }
 
+    private fun listenerSignUpButton() {
+        newAccountLink?.setOnClickListener{
+            goToActivity(SignUpActivity::class.java)
+        }
     }
 }

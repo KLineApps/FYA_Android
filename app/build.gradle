@@ -67,6 +67,9 @@ dependencies {
 
     implementation 'pl.charmas.android:android-reactive-location:1.0@aar'
 
+    //Horizontal progress bar with dots
+    implementation 'com.kofigyan.stateprogressbar:stateprogressbar:1.0.0'
+
 }
 
 apply plugin: 'com.google.gms.google-services'

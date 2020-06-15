@@ -13,4 +13,21 @@
 
     <string name="email">E-mail</string>
     <string name="password">Senha</string>
+
+    <string name="step_description">Etapa 1 de 2</string>
+    <string name="wellcome_description">Olá, ficamos felizes que queira fazer parte da comunidade FYA.</string>
+    <string name="register_intro_text">Precisamos de alguns dados para iniciar o seu cadastro.</string>
+    <string name="name_description">Qual o seu nome?</string>
+    <string name="name_type_description">Você é aluno ou professor?</string>
+
+    <string name="first_text_signup_checkbox">
+        Aluno
+    </string>
+    <string name="second_text_signup_checkbox">
+        Professor
+    </string>
+
+    <string name="next_signup_text">
+        Avançar
+    </string>
 </resources>
