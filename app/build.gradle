@@ -7,7 +7,7 @@ apply plugin: 'kotlin-android-extensions'
 android {
     compileSdkVersion 28
     defaultConfig {
-        applicationId "tech.lucasfeitosa.fya"
+        applicationId "io.klineapps.fya"
         minSdkVersion 23
         targetSdkVersion 28
         versionCode 1
@@ -66,6 +66,9 @@ dependencies {
     implementation 'com.tbruyelle.rxpermissions:rxpermissions:0.9.4@aar'
 
     implementation 'pl.charmas.android:android-reactive-location:1.0@aar'
+
+    //Horizontal progress bar with dots
+    implementation 'com.kofigyan.stateprogressbar:stateprogressbar:1.0.0'
 
 }
 
